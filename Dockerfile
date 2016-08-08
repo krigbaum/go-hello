@@ -2,5 +2,5 @@
 FROM golang:1.6
 COPY . /go/src
 ENV GOBIN /go/bin
-RUN go install src/hello.go
+RUN -d go install src/hello.go
 #CMD /bin/bash
